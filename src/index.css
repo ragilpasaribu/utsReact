@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.li-item{
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.li-item::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: thistle;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.li-item:hover::after{
+  transform: scaleX(1);
+}
+
+.homeku{
+  background-image: url('https://play-lh.googleusercontent.com/proxy/2tj1HTTkxfLUCHMYCMY7Ik_u9Dv-ctrQ7tteluo8MkL9bUzSFutbEcvkGroJxU6PTS84IHjfzCYjRsCflXcZ5k_CV2OAD2Al4i_fUCrb6cBVNvtB4TZhu97Z=s3840-w3840-h2160');
+}
